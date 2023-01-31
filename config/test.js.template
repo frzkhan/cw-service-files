@@ -1,0 +1,13 @@
+module.exports = {
+  fastify: { port: 0, prefix: '/api/files' },
+  mongodb: {
+    active: true,
+    databases: [
+      {
+        name: 'files',
+        db: 'files',
+        options: {}
+      }
+    ]
+  }
+}

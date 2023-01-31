@@ -1,0 +1,14 @@
+module.exports = {
+  fastify: { active: true, port: 3010, prefix: '/api/files' },
+  logger: { level: 'debug' },
+  mongodb: {
+    active: true,
+    databases: [
+      {
+        name: 'files',
+        db: 'files',
+        options: {}
+      }
+    ]
+  }
+}
